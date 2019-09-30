@@ -151,7 +151,7 @@ checkpoint = ModelCheckpoint(config.model_path, monitor='val_acc', verbose =1,mo
 # In[91]:
 
 
-model.fit(X,y,epochs=10,batch_size=32,shuffle=True, validation_split=0.1, callbacks=[checkpoint])
+model.fit(X,y,epochs=30,batch_size=32,shuffle=True, validation_split=0.1, callbacks=[checkpoint])
 model.save(config.model_path)
 
 
